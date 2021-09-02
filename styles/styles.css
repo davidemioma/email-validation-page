@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #373737;
+}
+
+h3 {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+#form {
+  position: relative;
+}
+
+#form #email {
+  width: 300px;
+  background: #292929;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #fff;
+  font-style: 10px;
+}
+
+#form .input_box {
+  position: relative;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+#form.invalid .input_box:before {
+  content: " ";
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/invalid.png);
+  background-size: cover;
+}
+
+#form.valid .input_box:before {
+  content: " ";
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/valid.png);
+  background-size: cover;
+}
